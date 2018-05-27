@@ -1,0 +1,32 @@
+{
+  "name": "Erik",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^1.1.0",
+    "autoprefixer": "^8.5.1",
+    "cssnano": "^3.10.0",
+    "glhd-tailwindcss-transitions": "^0.3.0",
+    "postcss-all-link-colors": "^2.0.0",
+    "postcss-cli": "^5.0.0",
+    "postcss-grid-kiss": "^1.4.2",
+    "postcss-responsive-font": "^1.0.3",
+    "prettier": "^1.12.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-helmet": "^5.2.0",
+    "react-scripts": "1.1.4",
+    "tailwindcss": "^0.5.3",
+    "tailwindcss-blend-mode": "^0.1.0",
+    "tailwindcss-cursor-extended": "^0.1.0"
+  },
+  "scripts": {
+    "b:grid-kiss": "postcss styles/grid-kiss/grid.css --output static/styles/grid.css --use postcss-grid-kiss",
+    "b:css": "postcss src/styles/tailwind/index.css -o src/styles/tailwind.scss",
+    "w:css": "postcss src/styles/tailwind/index.css -o src/styles/tailwind.scss -w",
+    "start": "react-scripts start && npm run w:css",
+    "build": "react-scripts build npm run b:css",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

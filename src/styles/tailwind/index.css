@@ -1,0 +1,14 @@
+@tailwind preflight;
+
+
+
+ /*Example union de clases*/
+
+.title{
+
+    @apply .bg-pink .text-white .py-3 .px-6 .font-bold .rounded-full .mt-1 .mb-2
+
+}
+
+
+@tailwind utilities;
